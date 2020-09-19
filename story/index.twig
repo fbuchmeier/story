@@ -10,12 +10,12 @@
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content="{{ site_title }}"/>
-	<meta property="og:image" content="{{ meta.image }}"/>
+	<meta property="og:image" content="{{ meta.image|url }}"/>
 	<meta property="og:url" content="{{ base_url }}"/>
 	<meta property="og:site_name" content="{{ site_title }}"/>
 	<meta property="og:description" content="{{ meta.description|striptags }}"/>
 	<meta name="twitter:title" content="{{ site_title }}" />
-	<meta name="twitter:image" content="{{ meta.image }}" />
+	<meta name="twitter:image" content="{{ meta.image|url }}" />
 	<meta name="twitter:url" content="{{ base_url }}" />
 	<meta name="twitter:card" content="summary_large_image" />
 
@@ -44,7 +44,7 @@
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
-		<div id="fh5co-aside" style="background-image: url({{ meta.image }})">
+		<div id="fh5co-aside" style="background-image: url({{ meta.image|url }})">
 			<div class="overlay"></div>
 			<nav role="navigation">
 				<ul>
